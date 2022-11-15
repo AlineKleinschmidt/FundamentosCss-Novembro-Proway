@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="compartilhado.css">
+    <style>
+      
+        img {
+            width: 30px;
+            height: 100px;
+        }
+
+        img:hover {
+            width: 60px;
+            height: 200px;
+        }
+
+        #meu_id {
+            border: 1px solid black;
+        }
+
+        #borda_grossa {
+            border: 5px dashed black;
+        }
+
+        .remover_estilo {
+            text-decoration: none;
+        }
+
+        p:hover {
+            font-weight: bold;
+        }
+        
+        .nomes_proprios:hover {
+            text-transform: capitalize;
+        }
+        
+        #enviar {
+            
+            background-color: blue;
+            
+            border: 1px solid black;
+            
+            border-radius: 10px;
+
+            padding: 8px;
+
+            color: white;
+
+            width: 50px;
+            
+        }
+
+        #enviar:hover {
+
+            background-color: aqua;
+
+            color: black;
+
+            width: 300px;
+            
+        }
+        
+        #enviar::after {
+            content: "enviar";
+        }
+        
+        #enviar:hover::after {
+            content: "Geralmente ID é único então não use o id enviar em outro seletor, pfv";
+        }
+        </style>
+
+</head>
+
+<body>
+    <a href="outrapagina.html" target="_blank">vai para outra pagina</a>
+    
+    <a href="pagina3.html">pagina 3</a>
+   
+    <a href="http://oliota.com" id="meu_id" class="remover_estilo">link do professor</a>
+
+    <p> Sou um paragrafo</p>
+
+    <h1>Sou um título grande</h1>
+
+
+    <img src="https://yt3.ggpht.com/ytc/AAUvwnh8uSXNsEBqViI4hmRIRGfdVngmV4Tc1r-sM4xqKQ=s176-c-k-c0x00ffffff-no-rj">
+
+    <ul>
+        <li><i id="borda_grossa" class="remover_estilo">italico</i></li>
+        <li><b class="remover_estilo">negrito</b></li>
+        <li><u class="remover_estilo">linha</u></li>
+        <li><s class="remover_estilo">riscado</s></li>
+    </ul>
+
+    <p>outro paragrafo</p>
+
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+
+
+    <p><u class="remover_estilo">sem underline</u></p>
+
+    <p><s id="unico">sou unico</s></p>
+
+    <h2 style="background-color: blueviolet; color: white;">titulo até que grande (Nubank)</h2>
+
+    <u style="text-decoration: none;">underline</u>
+
+    <s style="text-decoration: none ;">riscado</s>
+
+    <p style="color: blue;">Vermelho</p>
+
+    <p class="nomes_proprios">rubem duarte oliota</p>
+
+    <p class="nomes_proprios">RUBEM DUARTE OLIOTA</p>
+
+    <div id="enviar"></div>
+
+
+
+</body>
+
+</html>
